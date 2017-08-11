@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/" name = form1 method="POST">
+        <h1>
+            请输入一下你看过电影的主观评分（满分为5分,未看过的电影不必打分）
+        </h1>
+        <p>
+            黑客帝国:<br>
+            <input type="text" name="score1" /><br>
+        </p>
+        <p>
+            月光男孩:<br>
+            <input type="text" name="score2" /><br>
+        </p>
+        <p>
+            疯狂动物城:<br>
+            <input type="text" name="score3"/><br>
+        </p>
+        <p>
+            <input type="submit" value = "马上推荐电影"/>
+        </p>
+        <h1>
+        推荐结果：
+        {{ movie }}
+    </h1>
+        </form>
+
+
+</body>
+</html>
